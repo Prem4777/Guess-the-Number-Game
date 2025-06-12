@@ -14,8 +14,8 @@ A fun and simple number guessing game made using HTML, CSS, and JavaScript. Perf
 
 ## 📂 Project Structure
 
-guess-the-number/
-├── index.html # Main HTML file
-├── main.js # JavaScript game logic
-├── README.md # Project documentation
+guess-the-number/.
+├── index.html # Main HTML file.
+├── main.js # JavaScript game logic.
+├── README.md # Project documentation.
 
