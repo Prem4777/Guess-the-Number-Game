@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess The Number Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .game-container {
+            background: #fff;
+            padding: 24px 32px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            min-width: 300px;
+            text-align: center;
+        }
+        input[type="number"] {
+            padding: 6px;
+            width: 60px;
+            margin-right: 10px;
+        }
+        #sub{
+            padding: 6px 16px;
+            cursor: pointer;
+        }
+        .info {
+            margin-top: 16px;
+            font-size: 1rem;
+        }
+        .guess-count {
+            margin-top: 8px;
+            color: #555;
+        }
+    </style>
+ 
+</head>
+<body>
+    <div class="game-container">
+        <h2>Guess The Number!</h2>
+        <form id="guessForm" autocomplete="off">
+            <input type="number" id="guessInput" min="1" max="100" required>
+            <input type="button" id="sub" value="Submit">
+        </form>
+        <div class="info">
+            <h3 id="message">Enter the number the game</h3>
+            Previous Guesses:  <p id="previous-guesses"></p>
+            Remaining Guesses:  <p class="guess-count" id="guessCountText"></p>
+        </div>
+    </div>
+       <script src="main.js"></script>
+</body>
+</html>
